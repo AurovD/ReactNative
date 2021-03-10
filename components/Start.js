@@ -8,7 +8,7 @@ const wWidth = w.width;
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#fff',
+        backgroundColor: '#7EC5C1',
         alignItems: 'flex-end',
         justifyContent: 'flex-end',
         position: "relative",
@@ -17,44 +17,45 @@ const styles = StyleSheet.create({
     },
     img: {
         position: "absolute",
-        left: wWidth / 3,
+        left: 0,
         bottom: 200,
         width: 400,
         height: 400,
+        transform: [{ rotate: "0deg" }]
     },
     title: {
         textAlign: "right",
         fontSize: 60,
-        color: "#FF8C01"
+        color: "#eb573b"
     },
     button: {
-        backgroundColor: "#63A22E",
+        backgroundColor: "#f0c869",
         borderRadius: 50,
         paddingTop: 5,
         paddingBottom: 5,
         paddingRight: 5,
         paddingLeft: 5,
-        borderWidth: 2,
         borderStyle: "solid",
-        borderColor: "#FF8C01"
+        borderWidth: 2,
+        borderColor: "#fff",
     }
 });
 
-const Main = ({navigation, route}) => {
+const Start = ({navigation}) => {
 
     return (
         <View style={styles.container}>
             <Image
                 style={styles.img}
-                source={{uri: "https://sneakers4funds.com/wp-content/uploads/2019/10/healthy-food-1024x1024.jpg"}}></Image>
+                source={require('../assets/start.png')}></Image>
             <View>
                 <Text style={styles.title}>HEALTHY</Text>
-                <Text style={styles.title}>FOOD</Text>
+                <Text style={[styles.title, {color: "#fff"}]}>FOOD</Text>
             </View>
             <View style={styles.button}>
-                <Button title={"Start On"} onPress={() => navigation.navigate("MAIN")}></Button>
+                <Button title={"Start On"} onPress={() => navigation.navigate("MENU")}></Button>
             </View>
         </View>
     )
 };
-export default Main;
+export default Start;
