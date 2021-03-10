@@ -234,17 +234,17 @@ const Start = ({navigation, route}) => {
                         time: "Lunch",
                         level: "Beginner",
                         color: "#24F33C",
-                        ingredients: [
-                            {"Fish": "200 pounds"},
-                            {"Water": "200 liters"},
-                            {"Salt": "4 teaspoons"}
-                        ],
+                        ingredients: {
+                            "Fish": "200 pounds",
+                            "Water": "200 liters",
+                            "Salt": "4 teaspoons"
+                        },
                         timer: "60 mins",
                         count: "4 people"
                     },
                 ]}
-                renderItem={({item}, index) =>
-                    <View style={styles.item} key={index}>
+                renderItem={({item}) =>
+                    <View style={styles.item}>
                         <Image style={styles.img} source={item.img}></Image>
                         <View style={styles.titles}>
                             <Text style={styles.text}>{item.title}</Text>
