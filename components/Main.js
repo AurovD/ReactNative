@@ -65,7 +65,7 @@ const Start = ({navigation, route}) => {
                     {
                         title: 'Fried eggs with baсon',
                         img: require(`../assets/eggs.png`),
-                        img2: '../assets/pawns.png',
+                        img2: '../assets/eggs.png',
                         time: "Breakfast",
                         level: "2+Year's Experience",
                         color: "#7C89FF",
@@ -95,22 +95,22 @@ const Start = ({navigation, route}) => {
                     {
                         title: 'Miso Soup',
                         img: require('../assets/mishu.png'),
-                        img2: '../assets/pawns.png',
+                        img2: '../assets/mishu.png',
                         time: "Lunch",
                         level: "Beginner",
                         color: "#24F33C",
-                        ingredients: [
-                            {"Fish": "200 pounds"},
-                            {"Water": "200 liters"},
-                            {"Salt": "4 teaspoons"}
-                        ],
+                        ingredients:
+                            {"Fish": "200 pounds",
+                                "Water": "200 liters",
+                                "Salt": "4 teaspoons"}
+                        ,
                         timer: "60 mins",
                         count: "4 people"
                     },
                     {
                         title: 'Fried eggs with baсon',
                         img: require(`../assets/eggs.png`),
-                        img2: '../assets/pawns.png',
+                        img2: '../assets/eggs.png',
                         time: "Breakfast",
                         level: "2+Year's Experience",
                         color: "#7C89FF",
@@ -140,22 +140,22 @@ const Start = ({navigation, route}) => {
                     {
                         title: 'Miso Soup',
                         img: require('../assets/mishu.png'),
-                        img2: '../assets/pawns.png',
+                        img2: '../assets/mishu.png',
                         time: "Lunch",
                         level: "Beginner",
                         color: "#24F33C",
-                        ingredients: [
-                            {"Fish": "200 pounds"},
-                            {"Water": "200 liters"},
-                            {"Salt": "4 teaspoons"}
-                        ],
+                        ingredients:
+                            {"Fish": "200 pounds",
+                                "Water": "200 liters",
+                                "Salt": "4 teaspoons"}
+                        ,
                         timer: "60 mins",
                         count: "4 people"
                     },
                     {
                         title: 'Fried eggs with baсon',
                         img: require(`../assets/eggs.png`),
-                        img2: '../assets/pawns.png',
+                        img2: '../assets/eggs.png',
                         time: "Breakfast",
                         level: "2+Year's Experience",
                         color: "#7C89FF",
@@ -185,22 +185,22 @@ const Start = ({navigation, route}) => {
                     {
                         title: 'Miso Soup',
                         img: require('../assets/mishu.png'),
-                        img2: '../assets/pawns.png',
+                        img2: '../assets/mishu.png',
                         time: "Lunch",
                         level: "Beginner",
                         color: "#24F33C",
-                        ingredients: [
-                            {"Fish": "200 pounds"},
-                            {"Water": "200 liters"},
-                            {"Salt": "4 teaspoons"}
-                        ],
+                        ingredients:
+                            {"Fish": "200 pounds",
+                                "Water": "200 liters",
+                                "Salt": "4 teaspoons"}
+                        ,
                         timer: "60 mins",
                         count: "4 people"
                     },
                     {
                         title: 'Fried eggs with baсon',
                         img: require(`../assets/eggs.png`),
-                        img2: '../assets/pawns.png',
+                        img2: '../assets/eggs.png',
                         time: "Breakfast",
                         level: "2+Year's Experience",
                         color: "#7C89FF",
@@ -230,18 +230,19 @@ const Start = ({navigation, route}) => {
                     {
                         title: 'Miso Soup',
                         img: require('../assets/mishu.png'),
-                        img2: '../assets/pawns.png',
+                        img2: '../assets/mishu.png',
                         time: "Lunch",
                         level: "Beginner",
                         color: "#24F33C",
-                        ingredients: {
-                            "Fish": "200 pounds",
-                            "Water": "200 liters",
-                            "Salt": "4 teaspoons"
-                        },
+                        ingredients:
+                            {"Fish": "200 pounds",
+                                "Water": "200 liters",
+                                "Salt": "4 teaspoons"}
+                        ,
                         timer: "60 mins",
                         count: "4 people"
                     },
+
                 ]}
                 renderItem={({item}) =>
                     <View style={styles.item}>
