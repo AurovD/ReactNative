@@ -107,6 +107,141 @@ const Start = ({navigation, route}) => {
                         timer: "60 mins",
                         count: "4 people"
                     },
+                    {
+                        title: 'Fried eggs with baсon',
+                        img: require(`../assets/eggs.png`),
+                        img2: '../assets/pawns.png',
+                        time: "Breakfast",
+                        level: "2+Year's Experience",
+                        color: "#7C89FF",
+                        ingredients: {
+                            "Eggs": "2 pieces",
+                            "Bacon": "100 pounds",
+                            "Salt": "2 teaspoons"
+                        },
+                        timer: "30 mins",
+                        count: "2 people"
+                    },
+                    {
+                        title: 'Shrimp salad',
+                        img: require('../assets/pawns.png'),
+                        img2: '../assets/pawns.png',
+                        time: "Dessert",
+                        level: "Beginner",
+                        color: "#24F33C",
+                        ingredients: {
+                            "Prawns": "200 pounds",
+                            "Tomato": "150 pounds",
+                            "Salt": "3 teaspoons"
+                        },
+                        timer: "20 mins",
+                        count: "3 people"
+                    },
+                    {
+                        title: 'Miso Soup',
+                        img: require('../assets/mishu.png'),
+                        img2: '../assets/pawns.png',
+                        time: "Lunch",
+                        level: "Beginner",
+                        color: "#24F33C",
+                        ingredients: [
+                            {"Fish": "200 pounds"},
+                            {"Water": "200 liters"},
+                            {"Salt": "4 teaspoons"}
+                        ],
+                        timer: "60 mins",
+                        count: "4 people"
+                    },
+                    {
+                        title: 'Fried eggs with baсon',
+                        img: require(`../assets/eggs.png`),
+                        img2: '../assets/pawns.png',
+                        time: "Breakfast",
+                        level: "2+Year's Experience",
+                        color: "#7C89FF",
+                        ingredients: {
+                            "Eggs": "2 pieces",
+                            "Bacon": "100 pounds",
+                            "Salt": "2 teaspoons"
+                        },
+                        timer: "30 mins",
+                        count: "2 people"
+                    },
+                    {
+                        title: 'Shrimp salad',
+                        img: require('../assets/pawns.png'),
+                        img2: '../assets/pawns.png',
+                        time: "Dessert",
+                        level: "Beginner",
+                        color: "#24F33C",
+                        ingredients: {
+                            "Prawns": "200 pounds",
+                            "Tomato": "150 pounds",
+                            "Salt": "3 teaspoons"
+                        },
+                        timer: "20 mins",
+                        count: "3 people"
+                    },
+                    {
+                        title: 'Miso Soup',
+                        img: require('../assets/mishu.png'),
+                        img2: '../assets/pawns.png',
+                        time: "Lunch",
+                        level: "Beginner",
+                        color: "#24F33C",
+                        ingredients: [
+                            {"Fish": "200 pounds"},
+                            {"Water": "200 liters"},
+                            {"Salt": "4 teaspoons"}
+                        ],
+                        timer: "60 mins",
+                        count: "4 people"
+                    },
+                    {
+                        title: 'Fried eggs with baсon',
+                        img: require(`../assets/eggs.png`),
+                        img2: '../assets/pawns.png',
+                        time: "Breakfast",
+                        level: "2+Year's Experience",
+                        color: "#7C89FF",
+                        ingredients: {
+                            "Eggs": "2 pieces",
+                            "Bacon": "100 pounds",
+                            "Salt": "2 teaspoons"
+                        },
+                        timer: "30 mins",
+                        count: "2 people"
+                    },
+                    {
+                        title: 'Shrimp salad',
+                        img: require('../assets/pawns.png'),
+                        img2: '../assets/pawns.png',
+                        time: "Dessert",
+                        level: "Beginner",
+                        color: "#24F33C",
+                        ingredients: {
+                            "Prawns": "200 pounds",
+                            "Tomato": "150 pounds",
+                            "Salt": "3 teaspoons"
+                        },
+                        timer: "20 mins",
+                        count: "3 people"
+                    },
+                    {
+                        title: 'Miso Soup',
+                        img: require('../assets/mishu.png'),
+                        img2: '../assets/pawns.png',
+                        time: "Lunch",
+                        level: "Beginner",
+                        color: "#24F33C",
+                        ingredients: [
+                            {"Fish": "200 pounds"},
+                            {"Water": "200 liters"},
+                            {"Salt": "4 teaspoons"}
+                        ],
+                        timer: "60 mins",
+                        count: "4 people"
+                    },
                 ]}
                 renderItem={({item}, index) =>
                     <View style={styles.item} key={index}>
