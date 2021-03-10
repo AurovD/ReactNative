@@ -6,6 +6,7 @@ import {createStackNavigator} from "@react-navigation/stack";
 import { StyleSheet, Text, View } from 'react-native';
 import Main from "./components/Main";
 import Start from "./components/Start";
+import Dish from "./components/Dish";
 
 const Stack = createStackNavigator();
 
@@ -15,6 +16,7 @@ export default function App() {
         <Stack.Navigator initialRouteName="START">
           <Stack.Screen name="START" component={Start}/>
           <Stack.Screen name="MENU" component={Main}/>
+          <Stack.Screen name="DISH" component={Dish}/>
         </Stack.Navigator>
       </NavigationContainer>
   );

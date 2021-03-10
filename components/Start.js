@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
 });
 
 const Start = ({navigation}) => {
-
+    console.log(navigation)
     return (
         <View style={styles.container}>
             <Image

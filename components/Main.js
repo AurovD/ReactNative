@@ -2,6 +2,8 @@ import React from 'react';
 import {StyleSheet, View, Button, Text, Image, FlatList} from 'react-native';
 
 
+
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -62,70 +64,52 @@ const Start = ({navigation, route}) => {
                 data={[
                     {
                         title: 'Fried eggs with baсon',
-                        img: require('../assets/eggs.jpg.png'),
+                        img: require(`../assets/eggs.png`),
+                        img2: '../assets/pawns.png',
                         time: "Breakfast",
                         level: "2+Year's Experience",
-                        color: "#7C89FF"
-                    },
-                    {
-                        title: 'Shrimp salad',
-                    img: require('../assets/pawns.png'),
-                        time: "Dessert",
-                        level: "Beginner",
-                        color: "#24F33C"
-                    },
-                    {
-                        title: 'Miso Soup',
-                        img: require('../assets/mishu.png'),
-                        time: "Lunch",
-                        level: "Beginner",
-                        color: "#24F33C"
-                    },
-                    {
-                        title: 'Fried eggs with baсon',
-                        img: require('../assets/eggs.jpg.png'),
-                        time: "Breakfast",
-                        level: "2+Year's Experience",
-                        color: "#7C89FF"
+                        color: "#7C89FF",
+                        ingredients: {
+                            "Eggs": "2 pieces",
+                            "Bacon": "100 pounds",
+                            "Salt": "2 teaspoons"
+                        },
+                        timer: "30 mins",
+                        count: "2 people"
                     },
                     {
                         title: 'Shrimp salad',
                         img: require('../assets/pawns.png'),
+                        img2: '../assets/pawns.png',
                         time: "Dessert",
                         level: "Beginner",
-                        color: "#24F33C"
+                        color: "#24F33C",
+                        ingredients: {
+                            "Prawns": "200 pounds",
+                            "Tomato": "150 pounds",
+                            "Salt": "3 teaspoons"
+                        },
+                        timer: "20 mins",
+                        count: "3 people"
                     },
                     {
                         title: 'Miso Soup',
                         img: require('../assets/mishu.png'),
+                        img2: '../assets/pawns.png',
                         time: "Lunch",
                         level: "Beginner",
-                        color: "#24F33C"
-                    },
-                    {
-                        title: 'Fried eggs with baсon',
-                        img: require('../assets/eggs.jpg.png'),
-                        time: "Breakfast",
-                        level: "2+Year's Experience",
-                        color: "#7C89FF"
-                    },
-                    {
-                        title: 'Shrimp salad',
-                        img: require('../assets/pawns.png'),
-                        time: "Dessert",
-                        level: "Beginner",
-                        color: "#24F33C"
-                    },
-                    {
-                        title: 'Miso Soup',
-                        img: require('../assets/mishu.png'),
-                        time: "Lunch",
-                        level: "Beginner",
-                        color: "#24F33C"
+                        color: "#24F33C",
+                        ingredients: [
+                            {"Fish": "200 pounds"},
+                            {"Water": "200 liters"},
+                            {"Salt": "4 teaspoons"}
+                        ],
+                        timer: "60 mins",
+                        count: "4 people"
                     },
                 ]}
-                renderItem={({item}) =>
-                    <View style={styles.item}>
+                renderItem={({item}, index) =>
+                    <View style={styles.item} key={index}>
                         <Image style={styles.img} source={item.img}></Image>
                         <View style={styles.titles}>
                             <Text style={styles.text}>{item.title}</Text>
@@ -136,7 +120,17 @@ const Start = ({navigation, route}) => {
                             </View>
                         </View>
                         <View style={styles.btn}>
-                            <Button title={"Recipe"}></Button>
+                            <Button title={"Recipe"} onPress={() => navigation.navigate("DISH", {
+                                title: item.title,
+                                img: item.img,
+                                img2: item.img2,
+                                time: item.time,
+                                level: item.level,
+                                color: item.color,
+                                ingredients: item.ingredients,
+                                timer: item.timer,
+                                count: item.count
+                            })}></Button>
                         </View>
                     </View>}>
             </FlatList>
